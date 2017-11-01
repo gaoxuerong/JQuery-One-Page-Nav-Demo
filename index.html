@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>jQuery One Page Nav Demo</title>
+	<link href="demo.css" rel="stylesheet" media="all">
+	<link href="animate.css" rel="stylesheet" media="all">
+</head>
+<body>
+	<ul id="nav">
+		<li class="current"><a href="#intro">Js简介</a></li>
+		<li><a href="#usage">特性</a></li>
+		<li><a href="#options">解析器</a></li>
+		<li><a href="#examples">应用场景</a></li>
+	</ul>
+
+	<div id="container">
+		<div class="section" id="intro">
+			<h1>javascript简介</h1>
+			<p>
+				JavaScript一种直译式脚本语言，是一种动态类型、弱类型、基于原型的语言，内置支持类型。它的解释器被称为JavaScript引擎，为浏览器的一部分，广泛用于客户端的脚本语言，最早是在HTML（标准通用标记语言下的一个应用）网页上使用，用来给HTML网页增加动态功能。
+				在1995年时，由Netscape公司的Brendan Eich，在网景导航者浏览器上首次设计实现而成。因为Netscape与Sun合作，Netscape管理层希望它外观看起来像Java，因此取名为JavaScript。但实际上它的语法风格与Self及Scheme较为接近。[1]
+				为了取得技术优势，微软推出了JScript，CEnvi推出ScriptEase，与JavaScript同样可在浏览器上运行。为了统一规格，因为JavaScript兼容于ECMA标准，因此也称为ECMAScript。
+			</p>
+
+			<p><a href="https://baike.baidu.com/item/javascript/321142?fr=aladdin&fromid=10687961&fromtitle=js">JS</a></p>
+		</div>
+
+		<div class="section" id="usage">
+			<h2>特性</h2>
+			<p>
+				JavaScript脚本语言具有以下特点:
+				(1)脚本语言。JavaScript是一种解释型的脚本语言,C、C++等语言先编译后执行,而JavaScript是在程序的运行过程中逐行进行解释。
+				(2)基于对象。JavaScript是一种基于对象的脚本语言,它不仅可以创建对象,也能使用现有的对象。
+				(3)简单。JavaScript语言中采用的是弱类型的变量类型,对使用的数据类型未做出严格的要求,是基于Java基本语句和控制的脚本语言,其设计简单紧凑。
+				(4)动态性。JavaScript是一种采用事件驱动的脚本语言,它不需要经过Web服务器就可以对用户的输入做出响应。在访问一个网页时,鼠标在网页中进行鼠标点击或上下移、窗口移动等操作JavaScript都可直接对这些事件给出相应的响应。
+				(5)跨平台性。JavaScript脚本语言不依赖于操作系统,仅需要浏览器的支持。因此一个JavaScript脚本在编写后可以带到任意机器上使用,前提上机器上的浏览器支 持JavaScript脚本语言,目前JavaScript已被大多数的浏览器所支持。
+				不同于服务器端脚本语言，例如PHP与ASP，JavaScript主要被作为客户端脚本语言在用户的浏览器上运行，不需要服务器的支持。所以在早期程序员比较青睐于JavaScript以减少对服务器的负担，而与此同时也带来另一个问题：安全性。
+				而随着服务器的强壮，虽然程序员更喜欢运行于服务端的脚本以保证安全，但JavaScript仍然以其跨平台、容易上手等优势大行其道。同时，有些特殊功能（如AJAX）必须依赖Javascript在客户端进行支持。随着引擎如V8和框架如Node.js的发展，及其事件驱动及异步IO等特性，JavaScript逐渐被用来编写服务器端程序。
+			</p>
+		</div>
+
+		<div class="section" id="options">
+			<h2>解析器</h2>
+
+			<p>不同浏览器有不同的JS引擎;google的是V8引擎
+				目前该JavaScript引擎已用于其它项目的开发。第一个版本随着第一个版本的Chrome于2008年9月2日发布。
+				V8使用C++开发，并在谷歌浏览器中使用。在运行JavaScript之前，相比其它的JavaScript的引擎转换成字节码或解释执行，V8将其编译成原生机器码（IA-32, x86-64, ARM, or MIPS CPUs），并且使用了如内联缓存（inline caching）等方法来提高性能。有了这些功能，JavaScript程序在V8引擎下的运行速度媲美二进制程序。
+				V8中实现的ECMAScript中指定 ECMA - 262 ，第3版 运行在Windows XP和Vista,Mac OS X的10.5（雪豹和Linux系统使用IA - 32或ARM处理器。
+				V8可以独立运行，也可以 嵌入 到任何C++应用程序。基于BSD协议，任何组织或个人可以将其源码用于自己的项目中。
+			</p>
+
+		</div>
+
+		<div class="section" id="examples">
+			<h2>应用场景</h2>
+			<ul>
+				<li>嵌入动态文本于HTML页面</li>
+				<li>在数据被提交到服务器之前验证数据。</li>
+				<li>控制cookies，包括创建和修改等。</li>
+				<li>基于Node.js技术进行服务器端编程。</li>
+				<li>基于socket.io进行网络编程</li>
+				<li>基于three.js，D3.js的可视化编程</li>
+			</ul>
+			<ul>
+				<li><a href="index.html">index.html</a></li>
+				<li><a href="filter.html">filter.html</a></li>
+				<li><a href="hash.html">hash.html</a></li>
+				<li><a href="top.html">top.html</a></li>
+				<li><a href="multiple.html">multiple.html</a></li>
+				<li><a href="non-existing.html">non-existing.html</a></li>
+
+			</ul>
+		</div>
+	</div>
+
+	<!--[if lte IE 8]><script src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js"></script><![endif]-->
+	<!--[if gt IE 8]><!--><script src="http://cdn.static.runoob.com/libs/jquery/2.0.1/jquery.min.js"></script><!--<![endif]-->
+	<script src="jquery.nav.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('#nav').onePageNav({
+                currentClass: 'current',
+                scrollSpeed: 1000,
+                changeHash: false,
+                easing: 'swing'
+			});
+		});
+	</script>
+</body>
+</html>
